@@ -1,0 +1,29 @@
+{
+    "name": "coduo/tutu-faker-extension",
+    "license": "MIT",
+    "type": "project",
+    "description": "This extensions integrates fzaninotto/faker with TuTu.",
+    "autoload": {
+        "psr-0": { "": "src/" }
+    },
+    "require": {
+        "php": ">=5.4.0",
+        "fzaninotto/faker": "~1.0",
+        "twig/twig": "1.*"
+    },
+    "require-dev": {
+        "behat/behat": "3.0.*",
+        "behat/mink-extension": "~2.0@dev",
+        "behat/mink-goutte-driver": "~1.0@dev",
+        "bossa/phpspec2-expect": "dev-master",
+        "coduo/tutu": "1.0.*@dev"
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
