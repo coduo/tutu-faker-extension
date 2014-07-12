@@ -6,7 +6,7 @@ To use extension simply add it to TuTu composer dependencies:
 
 ```
     "require": {
-        "coduo/tutu-faker-extension": "1.0.*@dev-master"
+        "coduo/tutu-faker-extension": "1.0.*@dev"
     }
 ```
 
