@@ -4,7 +4,7 @@ namespace Coduo\TuTu\Extension;
 
 use Coduo\TuTu\Extension;
 use Coduo\TuTu\Extension\Faker\Twig\Extension\FakerExtension;
-use Pimple\Container;
+use Coduo\TuTu\ServiceContainer;
 
 class Faker implements Extension
 {
@@ -22,11 +22,11 @@ class Faker implements Extension
     }
 
     /**
-     * @param Container $container
+     * @param ServiceContainer $container
      */
-    public function load(Container $container)
+    public function load(ServiceContainer $container)
     {
         $fakerExtension = new FakerExtension($this->locale);
-        $container['twig']->addExtension($fakerExtension);
+        $container->getService('twig')->addExtension($fakerExtension);
     }
 }
