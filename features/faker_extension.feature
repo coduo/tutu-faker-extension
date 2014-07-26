@@ -7,9 +7,11 @@ Feature: Create fake data in responses
     Given there is a routing file "responses.yml" with following content:
     """
     hello_world:
-      path: /hello/world
-      content: |
-        Hello {{ faker.firstName }}
+      request:
+        path: /hello/world
+      response:
+        content: |
+          Hello {{ faker.firstName }}
     """
     And TuTu is running on host "localhost" at port "8000"
     When http client send GET request on "http://localhost:8000/hello/world"
