@@ -2,18 +2,10 @@
 
 This extensions integrates [fzaninotto/faker](https://github.com/fzaninotto/Faker) with TuTu.
 
-To use extension simply add it to TuTu composer dependencies:
-
-```
-    "require": {
-        "coduo/tutu-faker-extension": "1.0.*@dev"
-    }
-```
-
 Update composer
 
 ```
-$ composer update
+$ composer require coduo/tutu-faker-extension
 ```
 
 Enable extension in TuTu configuration
